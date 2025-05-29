@@ -6,8 +6,6 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
-import LoginForm from "./components/login-form";
-import SignUpForm from "./components/sign-up-form";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -66,7 +64,7 @@ const SignUpForm = () => {
           }
           toast.error("Erro ao criar conta.");
         },
-      }
+      },
     );
   }
 
